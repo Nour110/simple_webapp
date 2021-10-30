@@ -85,7 +85,7 @@ def submit():
 		insert_message(request)
 		return render_template("submit.html", thanks = True)
 
-
+# handle displaying messages and displaying them when the user navigates to the view page
 @app.route("/view/")
 def view():
 	display = random_message(7)
