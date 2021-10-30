@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{%block header %}
+<h1>{% block title %}Your Message{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+	<form method="post">
+		<label for="message">Go ahead and write your message. Your computer is listening with great intent and anticipation</label>
+		<br>
+		<input type="text" name="message" id="message">
+		<br>
+		<label for="name">Provide your name or handle.</label>
+		<br>
+		<input type="text" name="name" id="name">
+		<br>
+		<input type="submit" value="Submit message">
+	</form>
+
+	{% if thanks %}
+		<p>
+			<img src = "/static/happycomputer.png" alt="yourcomputer">
+		</p>
+		<br>
+		Look you made your computer happy!
+		<br>
+	{% endif %}
+
+{% endblock %}
