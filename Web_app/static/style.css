@@ -1,6 +1,6 @@
 html {
     font-family: sans-serif;
-    background: AntiqueWhite;
+    background: #696969;
     padding: 1rem;
 }
 
@@ -10,14 +10,18 @@ body {
 }
 
 h1 {
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
+    color: #F5F5F5k;
+    font-family: fangsong;
     margin: 1rem 0;
     text-align: center;
 }
 
+p {
+    font-family: fantasy;
+}
+
 a {
-    color: CornflowerBlue;
+    color: #DB7093;
     text-decoration: none;
 }
 
@@ -27,7 +31,7 @@ hr {
 }
 
 nav {
-    background: AntiqueWhite;
+    background: #4682B4;
     padding: 0 0.5rem;
     border-radius: 25px;
 }
@@ -46,7 +50,7 @@ nav ul li a {
 
 .content {
     padding: 0 1rem 1rem;
-    background: white;
+    background: #8B4513;
     border-radius: 25px;
 }
 
@@ -54,6 +58,7 @@ nav ul li a {
     text-align: center;
     margin: 1em 0;
     padding: 1em;
-    background: #cae6f6;
+    background: #8B4513;
     border: 1px solid #377ba8;
 }
+

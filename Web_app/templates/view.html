@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block header %}
+  <h1>{% block title %}Here are other kind messages that people have posted{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  
+  {% if messages %}
+    {% for combo in messages %}
+      <p>{{ combo[1] }}</p>
+      <p style = "font-style: italic;">  -{{ combo[0] }}</p>
+      <br>
+    {% endfor %}
+  {% else %}
+    <p> Looks like there are no messages yet. You should be the first to compliment your computer. They'll definitely remember that.</p>
+  {% endif %}
+  
+
+{% endblock %}
